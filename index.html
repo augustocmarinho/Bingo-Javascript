@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+
+    <title>Bingo</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+
+
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body onload="//newCard()" >
+
+    <div id="container" >
+        <div id="header">
+            <h1>Bingo Online</h1>
+        </div>
+        <div class="col-md-12 row">
+            <div class="col-md-6">
+                <label for="">Qual a Quantidade de Jogadores?</label> <br />
+                <input type="number" id="qtdJogadores" value="2" class="form-control col-md-2"> <br />
+                <button class="btn btn-primary" id="btnJogar" onclick="setQtdJog()">Jogar!</button>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <button class="btn btn-primary">Sortear Novo número</button>
+            </div>
+        </div>
+        <hr />
+        <div id="content" >
+        <div id="tabelas" class="col-md-12 row">
+            <div class="col-md-6">
+                <table id="bingotable" style="margin:10px">
+                    <tr>
+                        <th class="orange">B</th>
+                        <th class="orange">I</th>
+                        <th class="orange">N</th>
+                        <th class="orange">G</th>
+                        <th class="orange">O</th>
+                    </tr>
+                    <tr>
+                        <td id="j1_0"> &nbsp;</td>
+                        <td id="j1_1"> &nbsp;</td>
+                        <td id="j1_2"> &nbsp;</td>
+                        <td id="j1_3"> &nbsp;</td>
+                        <td id="j1_4"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j1_5"> &nbsp;</td>
+                        <td id="j1_6"> &nbsp;</td>
+                        <td id="j1_7"> &nbsp;</td>
+                        <td id="j1_8"> &nbsp;</td>
+                        <td id="j1_9"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j1_10"> &nbsp;</td>
+                        <td id="j1_11"> &nbsp;</td>
+                        <td id="squarefree"> Jog 1</td>
+                        <td id="j1_12"> &nbsp;</td>
+                        <td id="j1_13"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j1_14"> &nbsp;</td>
+                        <td id="j1_15"> &nbsp;</td>
+                        <td id="j1_16"> &nbsp;</td>
+                        <td id="j1_17"> &nbsp;</td>
+                        <td id="j1_18"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j1_19"> &nbsp;</td>
+                        <td id="j1_20"> &nbsp;</td>
+                        <td id="j1_21"> &nbsp;</td>
+                        <td id="j1_22"> &nbsp;</td>
+                        <td id="j1_23"> &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table id="bingotable" style="margin:10px">
+                    <tr>
+                        <th class="orange">B</th>
+                        <th class="orange">I</th>
+                        <th class="orange">N</th>
+                        <th class="orange">G</th>
+                        <th class="orange">O</th>
+                    </tr>
+                    <tr>
+                        <td id="j2_0"> &nbsp;</td>
+                        <td id="j2_1"> &nbsp;</td>
+                        <td id="j2_2"> &nbsp;</td>
+                        <td id="j2_3"> &nbsp;</td>
+                        <td id="j2_4"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j2_5"> &nbsp;</td>
+                        <td id="j2_6"> &nbsp;</td>
+                        <td id="j2_7"> &nbsp;</td>
+                        <td id="j2_8"> &nbsp;</td>
+                        <td id="j2_9"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j2_10"> &nbsp;</td>
+                        <td id="j2_11"> &nbsp;</td>
+                        <td id="squarefree"> Jog 2</td>
+                        <td id="j2_12"> &nbsp;</td>
+                        <td id="j2_13"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j2_14"> &nbsp;</td>
+                        <td id="j2_15"> &nbsp;</td>
+                        <td id="j2_16"> &nbsp;</td>
+                        <td id="j2_17"> &nbsp;</td>
+                        <td id="j2_18"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="j2_19"> &nbsp;</td>
+                        <td id="j2_20"> &nbsp;</td>
+                        <td id="j2_21"> &nbsp;</td>
+                        <td id="j2_22"> &nbsp;</td>
+                        <td id="j2_23"> &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
