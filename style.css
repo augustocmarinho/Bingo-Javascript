@@ -2,7 +2,13 @@ body {
     display: flex;
     height: 100vh;
   }
-  
+.titulos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
   h1, p {
     font-family: 'Roboto', sans-serif; font-size: 20pt;
     font-weight: 600;
