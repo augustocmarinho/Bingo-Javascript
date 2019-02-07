@@ -4,46 +4,80 @@
     <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="icon.png" />
 
-    <title>Bingo</title>
+    <title>Bingo!</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
 
 
     <script type="text/javascript" src="main.js"></script>
 
 </head>
 
-<body onload="//newCard()" >
+<body>
 
-    <div id="container" style="width:100%;" class="col-md-12" >
-        
+    <div id="container" style="width:100%;" class="col-md-12">
+
         <div id="header">
             <h1>Bingo Online</h1>
         </div>
 
         <div class="row text-white">
-                <div class="col-sm-6 offset-sm-3 text-center">
-                    <div class="info-form">
-                        <div id="jogadores" class="form-group">
-                            <label style="color:black">Quantidade de Jogadores:</label>
-                            <input type="number" id="qtdJogadores" class="form-control" value="2" min="2">
-                        </div>
-                        <button id="btnJogar" class="btn btn-primary" onclick="setQtdJog()">Jogar</button> <br>
-                        <button class="btn btn-primary" id="btnSortear" onclick="sorteia()" style="display:none">Sortear Novo número</button>
+            <div class="col-sm-6 offset-sm-3 text-center">
+                <div class="info-form">
+                    <div id="jogadores" class="form-group">
+                        <label style="color:black">Quantidade de Jogadores:</label>
+                        <input type="number" id="qtdJogadores" class="form-control" value="2" min="2">
                     </div>
+                    <button id="btnJogar" class="btn btn-primary" onclick="Jogar()">Jogar</button> <br>
+                    <button class="btn btn-primary" id="btnSortear" onclick="sorteia()" style="display:none">Sortear Novo número</button>
                 </div>
             </div>
+        </div>
 
-        <div id="sorteados" style="display:none;"><br>Números Sorteados: <br></div> 
+        <br>
+
+        <div id="sorteado" style="display:none;">
+            <br>
+            Número Sorteado:
+        </div>
+
+        <div id="Todossorteados" style="display:none;">
+            <small class="badge badge-secondary" onclick="verSorteados()">Ver Todos</small>
+        </div>
+
         <hr />
 
-        <div id="content" >
-        
+        <div id="content">
+
             <div id="tabelas" class="col-md-12 row"></div>
 
         </div>
+
+        <div id="opcoes" style="display:none;">
+            <hr/>
+            <h4>Outras opções:</h4>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4"> Verificar cartelas com: <input type="number" style="height: 25px;width: 50px;" value="1" id="nVerificar"/> números sorteados</div>
+                    <div class="col-md-6"><button class="btn btn-secondary btn-sm" onclick="vericarSorteados()">Verificar</button></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">Reinicializar Jogo: </div>
+                    <div class="col-md-6"><button class="btn btn-danger btn-sm" onclick="reiniciar()">Reiniciar</button></div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted"> Copyright © Augusto Marinho | Leandro Britto | Mateus Abade | Moisés Araújo | Vinicius Oliveira <br> Programação Web 2018.2 - IFBA Campus Vitória da Conquista </p>
+            </div>
+        </footer>
 </body>
 
 </html>

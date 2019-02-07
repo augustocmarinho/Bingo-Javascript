@@ -10,20 +10,10 @@ body {
   }
 
   h1, p {
-    font-family: 'Roboto', sans-serif; font-size: 20pt;
-    font-weight: 600;
-    margin: 0 auto;
     text-align: center;
-    padding: 30px;
-    color: white;
   }
   
-  p a {
-    text-decoration: none;
-    color: #f1c40f;
-  }
-  
-  #squarefree {
+  #centro {
     font-family: Helvetica;
     margin: 0 auto;
     background: #5dc4de;
@@ -32,7 +22,7 @@ body {
     font-size: 15pt;
   }
   
-  #bingotable {
+  #tabelaBingo {
     margin: 0 auto;
     text-align: center;
     width: 400px;
@@ -49,7 +39,7 @@ body {
     width: 20%;
   }
   
-  .orange {
+  .tituloBingo {
     background: #032581;
     color: aliceblue;
   }
