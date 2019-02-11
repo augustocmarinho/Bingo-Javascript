@@ -26,6 +26,11 @@ function Jogar() {
         pontuacao[i] = new Array();  //Definindo um SubArray(bidimensional) para cada jogador
         NomeJogador[i] = prompt("Qual o nome do jogador " + (i + 1) + " ?", "");
 
+
+       while(!NomeJogador[i]){
+            NomeJogador[i] = prompt("Obrigatório nome para o jogador " + (i + 1) + " ", "");
+       }
+
         document.getElementById("tabelas").innerHTML += '' +
             '<div class="col-md-6">' +
             '<h4 style="padding-left:10px">' + NomeJogador[i] + '</h4>' +
