@@ -132,6 +132,9 @@ function getRandom() {
 /*Função sorteio do Bingo */
 function sorteia() {
     var sorteado = getRandom();
+    var alertStatus = document.getElementById("cartelasSorteadas").checked;
+    var cartelasSorteadas = "";
+
     Nsorteados += " |" + sorteado + "| ";
 
     //Informa Número Sorteado
@@ -143,6 +146,7 @@ function sorteia() {
             if (jogador[j][i] === sorteado) {
                 pontuacao[j].push(sorteado);;
                 document.getElementById('j' + j + '_' + i + '').style = "background-color: lightgreen;";
+                cartelasSorteadas +=NomeJogador[j] +", "; 
                 //Testa se existe ganhador
                 if (pontuacao[j].length == 24) {
                     alert("O jogador: '" + NomeJogador[j] + "' Venceu!");
@@ -150,6 +154,9 @@ function sorteia() {
                 }
             }
         }
+    }
+    if(cartelasSorteadas!="" && alertStatus){
+        alert("Ponto Marcado por: "+cartelasSorteadas+" nessa rodada.");
     }
 }
 /*Visualizar números sorteados */
